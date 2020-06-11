@@ -1,12 +1,11 @@
 :root {
   background-color: #ecf5ff;
   font-size: 62.5%;
-  font-family: 'Comfortaa', cursive;
 }
 
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Comfortaa', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -15,32 +14,35 @@
 h1,
 h2,
 h3,
-h4{
+h4 {
   margin-bottom: 1rem;
 }
 
-h1{
+h1 {
   font-size: 5.4rem;
   color: #56a5eb;
   margin-bottom: 5rem;
 }
-h1 > span{
+
+h1 > span {
   font-size: 2.4rem;
   font-weight: 500;
 }
-h2{
+
+h2 {
   font-size: 4.2rem;
   margin-bottom: 4rem;
   font-weight: 700;
 }
-h3{
+
+h3 {
   font-size: 2.8rem;
   font-weight: 500;
 }
 
-/* utilities */
+/* UTILITIES */
 
-.container{
+.container {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -51,7 +53,7 @@ h3{
   padding: 2rem;
 }
 
-.container > *{
+.container > * {
   width: 100%;
 }
 
@@ -101,4 +103,25 @@ h3{
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
+}
+
+/* FORMS */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
 }
