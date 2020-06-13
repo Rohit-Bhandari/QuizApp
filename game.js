@@ -12,7 +12,8 @@ let questionCounter = 0;
 let availableQuesions = [];
 
 let questions = [];
-
+// https://opentdb.com/api.php?amount=20&category=21&difficulty=easy&type=multiple -use this link for sports quiz
+// https://opentdb.com/api.php?amount=20&category=18&difficulty=easy&type=multiple -use this link for computer science quiz
 fetch("https://opentdb.com/api.php?amount=20&category=30&difficulty=easy&type=multiple").then(res => {
   console.log(res);
   return res.json();
